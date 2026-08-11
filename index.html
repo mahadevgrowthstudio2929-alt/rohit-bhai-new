@@ -1,4 +1,7 @@
-<!DOCTYPE html><html><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -12,38 +15,268 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1219022650348323');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1219022650348323&ev=PageView&noscript=1"
-/></noscript>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1219022650348323&ev=PageView&noscript=1"/>
+</noscript>
 <!-- End Meta Pixel Code -->
-<meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 <title>Rohit Mittal</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-body{margin:0;font-family:system-ui,Arial;background:linear-gradient(180deg,#08111f,#111b2d);color:#fff}
-.wrap{max-width:390px;margin:auto;min-height:100vh;display:flex;align-items:center;padding:18px}
-.card{width:100%;background:rgba(255,255,255,.05);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.08);border-radius:24px;padding:26px;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,.35)}
-.logo{width:92px;height:92px;object-fit:contain;border-radius:50%;background:#fff;padding:6px}
-.badge{display:inline-block;background:#1ecb6b22;color:#6cffad;padding:6px 12px;border-radius:99px;font-size:12px;margin:14px 0}
-h1{margin:8px 0 6px;font-size:30px}
-p{color:#cdd6e4;line-height:1.6;font-size:15px}
-.grid{display:grid;gap:12px;margin:22px 0}
-.item{background:#ffffff08;border-radius:14px;padding:14px;text-align:left}
-.item b{display:block;margin-bottom:4px}
-.cta{display:block;text-decoration:none;background:linear-gradient(90deg,#18c964,#00a8ff);color:#fff;padding:16px;border-radius:999px;font-weight:700;margin-top:10px}
-.note{font-size:12px;color:#aeb9cb;margin-top:14px}
-.footer{margin-top:20px;font-size:12px;color:#7ef3b0}
-</style></head><body><div class='wrap'><div class='card'>
-<img src='logo.png' class='logo' alt='logo'>
-<div class='badge'>🏏 Premium Cricket Community</div>
-<h1>Rohit Mittal</h1>
-<p>Daily cricket insights, fast match updates and an active Telegram community. Stay connected and never miss important cricket discussions.</p>
-<div class='grid'>
-<div class='item'><b>⚡ Fast Updates</b>Important cricket updates delivered quickly.</div>
-<div class='item'><b>🏏 Quality Insights</b>Simple, clean and community-focused match discussions.</div>
-<div class='item'><b>📱 Active Telegram Community</b>Join thousands of cricket enthusiasts in one place.</div>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+height:100vh;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+background:
+radial-gradient(circle at top,#1f6cff40 0%,transparent 40%),
+radial-gradient(circle at bottom,#00d08430 0%,transparent 40%),
+#050b16;
+color:white;
+}
+
+.bg{
+position:fixed;
+width:300px;
+height:300px;
+border-radius:50%;
+filter:blur(120px);
+opacity:.4;
+animation:float 6s infinite ease-in-out;
+}
+
+.bg1{
+background:#007bff;
+top:-100px;
+left:-100px;
+}
+
+.bg2{
+background:#00d084;
+bottom:-100px;
+right:-100px;
+animation-delay:2s;
+}
+
+@keyframes float{
+50%{
+transform:translateY(30px);
+}
+}
+
+.card{
+width:92%;
+max-width:390px;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.08);
+border-radius:28px;
+padding:24px;
+text-align:center;
+box-shadow:0 20px 60px rgba(0,0,0,.45);
+position:relative;
+z-index:2;
+}
+
+.live{
+display:inline-flex;
+align-items:center;
+gap:8px;
+padding:7px 14px;
+border-radius:100px;
+background:rgba(0,208,132,.15);
+color:#7fffbf;
+font-size:12px;
+font-weight:600;
+margin-bottom:16px;
+}
+
+.dot{
+width:8px;
+height:8px;
+background:#00ff88;
+border-radius:50%;
+animation:pulse 1.2s infinite;
+}
+
+@keyframes pulse{
+50%{
+transform:scale(1.8);
+opacity:.4;
+}
+}
+
+.logo{
+width:88px;
+height:88px;
+border-radius:50%;
+background:white;
+padding:6px;
+object-fit:contain;
+margin-bottom:14px;
+}
+
+h1{
+font-family:'Orbitron',sans-serif;
+font-size:28px;
+line-height:1.1;
+margin-bottom:10px;
+}
+
+.subtitle{
+font-size:14px;
+color:#c7d2e4;
+line-height:1.5;
+margin-bottom:18px;
+}
+
+.stats{
+display:flex;
+justify-content:space-between;
+gap:8px;
+margin-bottom:18px;
+}
+
+.stat{
+flex:1;
+background:rgba(255,255,255,.05);
+padding:12px;
+border-radius:16px;
+}
+
+.stat b{
+display:block;
+font-size:16px;
+margin-bottom:4px;
+}
+
+.stat span{
+font-size:11px;
+color:#b8c4d8;
+}
+
+.features{
+display:flex;
+flex-direction:column;
+gap:8px;
+margin-bottom:18px;
+}
+
+.feature{
+background:rgba(255,255,255,.05);
+padding:10px;
+border-radius:14px;
+font-size:13px;
+}
+
+.cta{
+display:block;
+text-decoration:none;
+padding:17px;
+border-radius:999px;
+font-weight:700;
+font-size:16px;
+background:linear-gradient(90deg,#00d084,#00a2ff);
+color:white;
+box-shadow:0 0 25px rgba(0,210,255,.45);
+animation:glow 2s infinite;
+}
+
+@keyframes glow{
+50%{
+transform:translateY(-2px);
+box-shadow:0 0 35px rgba(0,210,255,.7);
+}
+}
+
+.small{
+font-size:11px;
+color:#aeb7c9;
+margin-top:12px;
+}
+
+.footer{
+margin-top:12px;
+font-size:11px;
+color:#7fffbf;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="bg bg1"></div>
+<div class="bg bg2"></div>
+
+<div class="card">
+
+<div class="live">
+<div class="dot"></div>
+Community Active
 </div>
-<p><b>Simple • Fast • Community Driven</b></p>
-<a class='cta' href='https://t.me/+gpc85eG2K99hNWZl' target='_blank'>🚀 Join Telegram</a>
-<div class='note'>Join our growing Telegram community and stay updated.</div>
-<div class='footer'>Ads Managed by <b>Mahadev Growth Studio</b></div>
-</div></div></body></html>
+
+<img src="logo.png" class="logo">
+
+<h1>ROHIT MITTAL</h1>
+
+<p class="subtitle">
+Cricket insights, match discussions and a growing Telegram community for passionate cricket followers.
+</p>
+
+<div class="stats">
+<div class="stat">
+<b>Daily</b>
+<span>Updates</span>
+</div>
+
+<div class="stat">
+<b>Fast</b>
+<span>Alerts</span>
+</div>
+
+<div class="stat">
+<b>Active</b>
+<span>Community</span>
+</div>
+</div>
+
+<div class="features">
+<div class="feature">🏏 Cricket Discussions & Insights</div>
+<div class="feature">⚡ Real-Time Match Updates</div>
+<div class="feature">📱 Premium Telegram Community</div>
+</div>
+
+<a class="cta"
+href="https://t.me/+gpc85eG2K99hNWZl"
+target="_blank">
+🚀 JOIN TELEGRAM NOW
+</a>
+
+<div class="small">
+Stay updated with match conversations and community discussions.
+</div>
+
+<div class="footer">
+Managed By <b>Mahadev Growth Studio</b>
+</div>
+
+</div>
+
+</body>
+</html>
